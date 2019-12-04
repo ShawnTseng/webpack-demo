@@ -19,6 +19,8 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "jshint": "^2.10.3",
+    "jshint-loader": "^0.8.4",
     "lodash": "^4.17.15"
   }
 }

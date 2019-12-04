@@ -9,6 +9,11 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js/,
+                exclude: /node_modules/,
+                loader: 'jshint-loader'
+            },
+            {
                 test: /\.es6$/,
                 exclude: /node_modules/,
                 use: {
