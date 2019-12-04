@@ -1,4 +1,5 @@
 import _ from 'lodash';
+require('./login');
 
 function component() {
     const element = document.createElement('div');
@@ -9,3 +10,5 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+console.log('App loaded');
