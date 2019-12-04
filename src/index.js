@@ -1,5 +1,5 @@
 import _ from 'lodash';
-require('./login');
+require('./login.es6');
 
 function component() {
     const element = document.createElement('div');
