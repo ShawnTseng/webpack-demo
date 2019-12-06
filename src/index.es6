@@ -1,5 +1,8 @@
 import _ from 'lodash';
-require('./login.es6');
+// require('./login.es6');
+import { login } from './login.es6';
+
+login('admin', 'adsfasfd');
 
 function component() {
     const element = document.createElement('div');
