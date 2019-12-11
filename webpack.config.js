@@ -1,11 +1,13 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: ['./utils.js', './src/app.js'],
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'bundle.js',
+        path: path.resolve('build/js'),
+        publicPath: '/public/assets'
     },
     module: {
         rules: [
@@ -47,5 +49,8 @@ module.exports = {
             // [name] 為上方進入點設定的 "名稱"
             filename: "./css/[name].css"
         })
-    ]
+    ],
+    devServer: {
+        contentBase: 'public'
+    }
 }
