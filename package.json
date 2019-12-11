@@ -16,6 +16,8 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.3.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "strip-loader": "^0.1.2",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.2",
@@ -24,6 +26,7 @@
   "dependencies": {
     "jshint": "^2.10.3",
     "jshint-loader": "^0.8.4",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "mini-css-extract-plugin": "^0.8.0"
   }
 }
